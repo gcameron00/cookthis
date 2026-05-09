@@ -1,15 +1,81 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <title>About</title>
+    <title>About — CookThis</title>
+    <meta name="description" content="Why CookThis exists, who it cooks for, and what it deliberately doesn't do." />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="/assets/js/main.js"></script>
   </head>
   <body>
-    <h1>About</h1>
-    <p><a href="/">Back home</a></p>
+    <div data-shell="header"></div>
+
+    <main class="page prose">
+      <section class="page-head">
+        <p class="eyebrow">About</p>
+        <h1>What this site is</h1>
+        <p class="lede">
+          CookThis is a recipe site with a tight brief. It's not trying to be the world's biggest cookbook — it's trying to feed one specific person well, every weekday.
+        </p>
+      </section>
+
+      <section>
+        <h2>Who it cooks for</h2>
+        <p>
+          The eater is an 18/19-year-old guy. He works full-time, trains most days, and takes his lunch to work in a box that goes in a microwave. He likes protein, doesn't like vegetables, and isn't going to pretend otherwise.
+        </p>
+        <p>
+          He isn't the cook. The cook reads the recipes here; the eater just sees the plate.
+        </p>
+      </section>
+
+      <section>
+        <h2>What "hidden veg" means</h2>
+        <p>
+          It's the rule that quietly shapes every dish. Vegetables are present in every recipe — for nutrition, for bulk, for sauce — but they don't appear on the plate as recognisable shapes. They're blended into the sauce, grated into the mince, puréed under the topping, or diced fine enough to read as colour rather than vegetable.
+        </p>
+        <p>
+          Each recipe page calls out exactly which vegetables are hiding inside. The cook knows what to buy. The eater never has to read it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why protein is on every card</h2>
+        <p>
+          He's tracking it. So the number is right there on the recipe card, not buried in a nutrition table. Most dishes target 35–50 g of protein per portion — enough to be useful for someone training hard without straying into "drink the chicken" territory.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why lunches and dinners are different</h2>
+        <p>
+          Lunches have to survive a sealed container in a bag, then a communal microwave. That rules out anything with a crisp coating, anything that needs assembling at the desk, anything that leaks. Dinners can be cooked fresh and served immediately — they get the dishes a microwave would ruin (steak stir-fry, panko katsu, blistered yogurt-dough pizza).
+        </p>
+      </section>
+
+      <section>
+        <h2>What this site doesn't try to be</h2>
+        <ul>
+          <li>A general-purpose recipe site.</li>
+          <li>A diet plan, a calorie tracker, or a macro calculator.</li>
+          <li>A place to make vegetables look exciting. The rule is <em>hide</em>, not <em>disguise</em>.</li>
+          <li>A SaaS. There's no login. Recipe data lives in the repository as a plain JS file, and that's the whole database.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How it's built</h2>
+        <p>
+          Static HTML, CSS and vanilla JavaScript. No framework, no build step. Hosted on Cloudflare Pages, deployed by pushing to the default branch. The code is in <a href="https://github.com/gcameron00/cookthis">the GitHub repo</a> — see the <code>README</code> for project layout and the <code>docs/</code> folder for the implementation plan and editorial principles.
+        </p>
+      </section>
+
+      <p class="back-link"><a href="/">← Back to this week's menu</a></p>
+    </main>
+
+    <div data-shell="footer"></div>
   </body>
 </html>

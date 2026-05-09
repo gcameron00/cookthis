@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Shopping list — CookThis</title>
+    <meta name="description" content="Auto-generated shopping list for this week's CookThis menu, grouped by aisle." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/shopping.js"></script>
+  </head>
+  <body>
+    <div data-shell="header"></div>
+
+    <main class="page">
+      <section class="page-head">
+        <p class="eyebrow">This week</p>
+        <h1>Shopping list</h1>
+        <p class="lede">
+          Aggregated from this week's ten meals, grouped by supermarket aisle. Items with the same name and unit are summed; obvious duplicates are merged.
+        </p>
+      </section>
+
+      <section class="shopping" data-mount="shopping"></section>
+    </main>
+
+    <div data-shell="footer"></div>
+  </body>
+</html>

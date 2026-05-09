@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Recipes — CookThis</title>
+    <meta name="description" content="All recipes on CookThis: high-protein, hidden-veg meals, filterable by meal type and tag." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/recipes.js"></script>
+  </head>
+  <body>
+    <div data-shell="header"></div>
+
+    <main class="page">
+      <section class="page-head">
+        <p class="eyebrow">All recipes</p>
+        <h1>Every dish, browseable.</h1>
+        <p class="lede">
+          The current library. Filter by meal type to see what fits a microwave lunch versus a cook-fresh dinner.
+        </p>
+      </section>
+
+      <section class="filters" aria-label="Filter recipes">
+        <div class="filter-group" data-mount="meal-filter"></div>
+        <div class="filter-group" data-mount="tag-filter"></div>
+      </section>
+
+      <section class="recipe-grid" data-mount="recipe-grid"></section>
+    </main>
+
+    <div data-shell="footer"></div>
+  </body>
+</html>

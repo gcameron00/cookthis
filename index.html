@@ -1,17 +1,59 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <title>Home</title>
+    <title>CookThis — this week's menu</title>
+    <meta name="description" content="A weekly Mon–Fri menu of high-protein, hidden-veg lunches and dinners for an 18/19-year-old gym-goer." />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script defer src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/menu.js"></script>
   </head>
   <body>
-    <h1>It works 🎉</h1>
-    <p>This site is deployed using Cloudflare Pages.</p>
-    <p><a href="/about/">About</a></p>
+    <div data-shell="header"></div>
+
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">This week's menu</p>
+        <h1>Five days. Ten dinners-and-lunches. No visible vegetables.</h1>
+        <p class="lede">
+          A weekly Mon–Fri menu built for one specific eater: 18, lifts, eats his lunch out of a microwave at work, and won't be served broccoli. Every dish hides its veg, hits its protein target, and survives a Tupperware overnight.
+        </p>
+        <p class="hero-actions">
+          <a class="btn btn-primary" href="/recipes/">Browse all recipes →</a>
+          <a class="btn btn-ghost" href="/shopping-list/">This week's shopping list</a>
+        </p>
+      </section>
+
+      <section class="week" aria-label="This week's menu">
+        <div class="week-grid" data-mount="week"></div>
+      </section>
+
+      <section class="rules">
+        <h2>The rules every recipe follows</h2>
+        <div class="rule-grid">
+          <article class="rule">
+            <h3>Veg is hidden, not absent</h3>
+            <p>Blended into sauces, grated into mince, puréed under toppings. Present for nutrition, invisible on the plate.</p>
+          </article>
+          <article class="rule">
+            <h3>Protein-forward</h3>
+            <p>Every dish targets 35–50 g of protein per portion. The number is on the card so it's easy to track.</p>
+          </article>
+          <article class="rule">
+            <h3>Lunches survive a microwave</h3>
+            <p>No crispy textures, no fresh-greens-on-top. If it goes soggy or sad after 2 minutes on full power, it's a dinner, not a lunch.</p>
+          </article>
+          <article class="rule">
+            <h3>Mon–Fri only</h3>
+            <p>Five lunches, five dinners. Weekends are deliberately off-menu — the site is a weekday tool, not a lifestyle.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div data-shell="footer"></div>
   </body>
 </html>
